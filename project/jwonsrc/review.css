@@ -1,0 +1,25 @@
+.headder-wrapper{
+  width : 1700px;
+  margin : auto;
+  padding: 30px 0;
+  display :flex;
+  justify-content: space-between;
+  font-size: 30px;
+}
+.title{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+.headder-wrapper input[type="text"]{
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+  border-bottom-width: 1;
+}
+
+.section-wrapper{
+  display:flex;
+  width: 1700px;
+}
