@@ -28,7 +28,7 @@
       <div class = "main-video">
       </div>
       <div class = "side-review-list">
-        <button type="button" class="btn btn-primary">글작성</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">글작성</button>
         <table class="table">
           <tr>
             <th>번호</th>
@@ -36,7 +36,7 @@
           </tr>
           <tr>
             <td>1.</td>
-            <td>와!! 효과만점 운동 영상입니다.</td>
+            <td data-bs-toggle="modal" data-bs-target="#exampleReview">와!! 효과만점 운동 영상입니다.</td>
           </tr>
           <tr>
             <td>2.</td>
@@ -47,5 +47,77 @@
     </div>
 
   </section>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">운동영상 리뷰</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input class="form-control" type="text" placeholder="제목" aria-label="default input example">
+          <br>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="내용"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">등록</button>
+          <button type="button" class="btn btn-outline-danger">취소</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleReview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">운동영상 리뷰</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="card" style="width: 29rem;">
+            <div class="card-body">
+              <h5 class="card-title">와!! 효과만점 운동 영상입니다.</h5>
+              <hr>
+              <p class="card-text">강추!! 강추!!</p>
+              <div >
+                <pre class="card-text"><small class="text-body-secondary">작성자: a
+작성일 : 2022-01-05 01:32:37
+조회수 : 1</small></pre>
+                <!-- <p class="card-text"><small class="text-body-secondary">작성자: a</small></p>
+                <p class="card-text"><small class="text-body-secondary">작성일 : 2022-01-05 01:32:37</small></p>
+                <p class="card-text"><small class="text-body-secondary">조회수 : 1</small></p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">목록</button>
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleEdit">글수정</button>
+          <button type="button" class="btn btn-outline-danger">글삭제</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <div class="modal fade" id="exampleEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">운동영상 리뷰</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input class="form-control" type="text" placeholder="와!! 효과만점 운동 영상입니다." aria-label="default input example">
+          <br>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="강추!! 강추!!"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">수정</button>
+          <button type="button" class="btn btn-outline-danger">취소</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
