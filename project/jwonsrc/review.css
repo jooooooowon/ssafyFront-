@@ -19,7 +19,13 @@
   border-bottom-width: 1;
 }
 
+.main-video{
+  padding:50px 0 ;
+}
+
 .section-wrapper{
   display:flex;
   width: 1700px;
+  margin:auto;
+  justify-content: space-evenly;
 }
