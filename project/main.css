@@ -34,9 +34,11 @@ header .header-main input[type="text"]{
 }
 .most-list{
     display:flex;
+    transition:.5s;
 }
 .ex-list{
     display:flex;
+    transition:.5s;
 }
 
 .most-list .most-video{
@@ -55,24 +57,52 @@ header .header-main input[type="text"]{
 
 .most-left-button{
     position:absolute;
-    left:0;
-    top:45%
+    left:-10px;
+    top:45%;
+    transition: .5s;
+}
+
+.most-left-button:hover{
+    left:-20px;
+    color:#baccde;
+    cursor:pointer;
 }
 
 .most-right-button{
     position:absolute;
-    right:0;
-    top:45%
+    right:-10px;
+    top:45%;
+    transition: .5s;
+}
+
+.most-right-button:hover{
+    right:-20px;
+    color:#baccde;
+    cursor:pointer;
 }
 
 .ex-left-button{
     position:absolute;
-    left:0;
-    top:45%
+    left:-10px;
+    top:45%;
+    transition: .5s;
+}
+
+.ex-left-button:hover{
+    left:-20px;
+    color:#baccde;
+    cursor:pointer;
 }
 
 .ex-right-button{
     position:absolute;
-    right:0;
-    top:45%
+    right:-10px;
+    top:45%;
+    transition: .5s;
+}
+
+.ex-right-button:hover{
+    right:-20px;
+    color:#baccde;
+    cursor:pointer;
 }
