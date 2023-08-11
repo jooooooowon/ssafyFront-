@@ -12,9 +12,6 @@ let mostList = document.querySelector(".most-list");
 let exList = document.querySelector(".ex-list");
 
 videoList.forEach((video)=> {
-    // videoHtml += `
-    // <iframe width="560" height="315" src="https://www.youtube.com/embed/${video.id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    // `
     let temp = document.createElement("div");
     temp.className = "most-video";
 
@@ -32,9 +29,6 @@ videoList.forEach((video)=> {
 })
 
 videoList.forEach((video)=> {
-    // videoHtml += `
-    // <iframe width="560" height="315" src="https://www.youtube.com/embed/${video.id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    // `
     let temp = document.createElement("div");
     temp.className = "most-video";
 
